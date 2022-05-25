@@ -151,8 +151,7 @@ celestia-appd tx staking create-validator \
     --commission-max-rate=0.2 \
     --commission-max-change-rate=0.01 \
     --min-self-delegation=1000000 \
-    --from=walletname \
-    --keyring-backend=test
+    --from=walletname
 ```
 > confirm transaction before signing and broadcasting [y/N]: y
 
