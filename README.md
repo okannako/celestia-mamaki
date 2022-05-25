@@ -44,14 +44,11 @@ celestia-appd init nodename --chain-id mamaki
 
 pruning="custom"
 pruning_keep_recent="100"
-pruning_keep_every="5000"
 pruning_interval="10"
 
 sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" $HOME/.celestia-app/config/app.toml
 sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \
 \"$pruning_keep_recent\"/" $HOME/.celestia-app/config/app.toml
-sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \
-\"$pruning_keep_every\"/" $HOME/.celestia-app/config/app.toml
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \
 \"$pruning_interval\"/" $HOME/.celestia-app/config/app.toml
 ```
@@ -125,6 +122,7 @@ sudo systemctl start celestia-appd
 ```
 sudo systemctl status celestia-appd
 ```
+-You can exit the status screen by pressing `ctrl+c` 
 
 ### Check Daemon Logs in Real Time
 
@@ -154,5 +152,11 @@ celestia-appd tx staking create-validator \
     --from=walletname
 ```
 > confirm transaction before signing and broadcasting [y/N]: y
+
+### Delegate to a Validator
+
+```
+celestia-appd tx staking delegate VALIDATOR_ADDRESS 1000000utia --chain-id mamaki --fees=1utia --from walletname
+```
 
 
