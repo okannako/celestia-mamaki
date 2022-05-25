@@ -57,11 +57,11 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \
 ```
 ### New Wallet
 
-```celestia-appd keys add walletname --keyring-backend=test```
+```celestia-appd keys add walletname```
 
 ### Devnet Wallet
 
-```celestia-appd keys add walletname --recover --keyring-backend=test```
+```celestia-appd keys add walletname --recover```
 
 - Do not forget to save your wallet information (words)!
 - To get a test token, you must enter the Faucet section and type as follows. https://discord.gg/JeRdw5veKu
