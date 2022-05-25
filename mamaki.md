@@ -125,6 +125,8 @@ cat /etc/systemd/system/celestia-appd.service
 ### Node Start
 
 ```
+cd $HOME/.celestia-app
+celestia-appd tendermint unsafe-reset-all --home "$HOME/.celestia-app"
 sudo systemctl enable celestia-appd
 sudo systemctl start celestia-appd
 ```
