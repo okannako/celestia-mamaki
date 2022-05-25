@@ -122,7 +122,7 @@ sudo systemctl start celestia-appd
 ```
 sudo systemctl status celestia-appd
 ```
--You can exit the status screen by pressing `ctrl+c` 
+- You can exit the status screen by pressing `ctrl+c` 
 
 ### Check Daemon Logs in Real Time
 
