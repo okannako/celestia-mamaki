@@ -159,4 +159,8 @@ celestia-appd tx staking create-validator \
 celestia-appd tx staking delegate VALIDATOR_ADDRESS 1000000utia --chain-id mamaki --fees=1utia --from walletname
 ```
 
+### Unjail
 
+```
+celestia-appd tx slashing unjail --from=walletname --chain-id mamaki
+```
