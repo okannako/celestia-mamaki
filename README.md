@@ -164,3 +164,9 @@ celestia-appd tx staking delegate VALIDATOR_ADDRESS 1000000utia --chain-id mamak
 ```
 celestia-appd tx slashing unjail --from=walletname --chain-id mamaki
 ```
+
+### See The Number of Peers You Are Connected to
+
+```
+curl -sS http://localhost:26657/net_info | jq -r '.result.n_peers'
+```
