@@ -171,7 +171,7 @@ celestia-appd tx slashing unjail --from=walletname --chain-id mamaki
 curl -sS http://localhost:26657/net_info | jq -r '.result.n_peers'
 ```
 
-### Find Out the Node Address
+### Find Out The Node Address
 
 ```
 celestia-appd keys show walletname --bech=val
