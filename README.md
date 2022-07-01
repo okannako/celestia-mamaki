@@ -13,10 +13,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential \
 git make ncdu -y
 
-wget https://golang.org/dl/go1.18.1.linux-amd64.tar.gz; \
-rm -rv /usr/local/go; \
-tar -C /usr/local -xzf go1.18.1.linux-amd64.tar.gz && \
-rm -v go1.18.1.linux-amd64.tar.gz && \
+curl https://dl.google.com/go/go1.17.2.linux-amd64.tar.gz | sudo tar -C/usr/local -zxvf -
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> ~/.bash_profile
 source ~/.bash_profile
 go version
