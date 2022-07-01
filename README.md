@@ -171,3 +171,11 @@ curl -sS http://localhost:26657/net_info | jq -r '.result.n_peers'
 ```
 celestia-appd keys show walletname --bech=val
 ```
+
+### Delete Node
+
+```
+cd
+rm -rf celestia-appd
+rm -rf .celestia-appd
+```
