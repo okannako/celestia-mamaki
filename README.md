@@ -24,7 +24,7 @@ source $HOME/.bash_profile
 go version
 
 ```
-- When we write the go version, the following should come out as a result `go version go1.17.2 linux/amd64`
+- When we write the go version, the following should come out as a result `go version go1.18.2 linux/amd64`
 
 ```
 cd $HOME
