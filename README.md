@@ -176,6 +176,6 @@ celestia-appd keys show walletname --bech=val
 
 ```
 cd
-rm -rf celestia-appd
-rm -rf .celestia-appd
+rm -rf celestia-app
+rm -rf .celestia-app
 ```
