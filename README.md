@@ -36,6 +36,8 @@ APP_VERSION=$(curl -s \
   | jq -r ".tag_name")
 git checkout tags/$APP_VERSION -b $APP_VERSION
 make install
+
+celestia-appd version
 ```
 ```
 cd $HOME
