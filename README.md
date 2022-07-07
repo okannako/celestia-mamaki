@@ -137,7 +137,7 @@ sudo journalctl -u celestia-appd.service -f
 ```
 curl -s localhost:26657/status | jq .result | jq .sync_info
 ```
-> "catching_up": false
+> latest_block_height =  compare its value with the explorer value. When they are identical to each other, synchronization to the system is complete.
 
 ### Connect Validator
 
