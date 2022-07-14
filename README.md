@@ -109,12 +109,25 @@ EOF
 ```
 cat /etc/systemd/system/celestia-appd.service
 ```
+```
+cd $HOME/.celestia-app
+celestia-appd tendermint unsafe-reset-all --home "$HOME/.celestia-app"
+```
+### Quick-Sync With Snapshot (This episode is not in the video. But there is no difference. You can enter the codes in order)
+
+```
+cd $HOME
+rm -rf ~/.celestia-app/data
+mkdir -p ~/.celestia-app/data
+SNAP_NAME=$(curl -s https://snaps.qubelabs.io/celestia/ | \
+    egrep -o ">mamaki.*tar" | tr -d ">")
+wget -O - https://snaps.qubelabs.io/celestia/${SNAP_NAME} | tar xf - \
+    -C ~/.celestia-app/data/
+```
 
 ### Node Start
 
 ```
-cd $HOME/.celestia-app
-celestia-appd tendermint unsafe-reset-all --home "$HOME/.celestia-app"
 sudo systemctl enable celestia-appd
 sudo systemctl start celestia-appd
 ```
