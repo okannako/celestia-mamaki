@@ -192,6 +192,11 @@ curl -sS http://localhost:26657/net_info | jq -r '.result.n_peers'
 celestia-appd keys show walletname --bech=val
 ```
 
+### No Journal Error
+```
+systemctl restart systemd-journald.service
+```
+
 ### Delete Node
 
 ```
