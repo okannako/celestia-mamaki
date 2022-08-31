@@ -204,3 +204,6 @@ cd
 rm -rf celestia-app
 rm -rf .celestia-app
 ```
+
+### Node Setup Video
+   *  https://www.youtube.com/watch?v=VH9Ar6phK00&t=10s
