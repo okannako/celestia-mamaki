@@ -332,7 +332,7 @@ curl -X POST -d '{"namespace_id": "0c204d39600fddd3",
 }
 ```
 
-- ``Not found`` hatası alırsanız cüzdanınızda yeterli coin yok demektir, explorerdan kontrol edin (https://testnet.mintscan.io/celestia-testnet).
+- ``Not found`` hatası alırsanız cüzdanınızda yeterli coin yok demektir, explorerdan kontrol edin (https://testnet.mintscan.io/celestia-testnet https://celestia.explorers.guru).
 
 - PayForData işleminizi gönderdikten sonra başarılı olduğunda node, işlemin dahil edildiği blok yüksekliğini cevap olarak gönderir. Sonra size geri dönmesini sağlamak için bu blok yüksekliğini ve PayForData işleminizi gönderdiğiniz namespace_id'yi kullanabilirsiniz. Bu örnekte elde ettiğimiz blok yüksekliği 214000 olduğunu düşünelim ve aşağıdaki kodda ilgili yere yazalım.
 ```
