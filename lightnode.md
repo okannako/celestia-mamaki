@@ -4,7 +4,13 @@
 ## Sistem Gereksinimleri
 Memory: 2 GB RAM
 CPU: Single Core
-Disk: 5 GB SSD
+Disk: 25 GB SSD
+
+## Tmux Kullanımı
+- Yeni tmux tekranı açmak: ```tmux```
+- Tmux ekranı listelemek: ```tmux ls```
+- Önceden açılmış tmux ekranını açmak: ```tmux attach -t tmuxsayfaismi```
+- Tmux sayfasından çıkmak:``ctrl+b`` basıp sonra sadece ``d`` ye basmak
 
 ## Sistem Güncellemesi
 ```
