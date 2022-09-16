@@ -105,7 +105,7 @@ curl -X GET http://127.0.0.1:26658/balance
 ### Blok Başlık (Header) Bilgisi Almak
 - Blok sayısını yani 1'i isteğinize göre düzenleyebilirsiniz.
 ```
-curl -X GET http://127.0.0.1:26658/header/1
+curl -X GET http://127.0.0.1:26658/header/1 | jq
 ```
 
 ### PayForData TX İşlemi
