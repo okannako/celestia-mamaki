@@ -114,7 +114,7 @@ curl -X GET http://127.0.0.1:26658/header/1 | jq
 ```
 curl -X POST -d '{"namespace_id": "0c204d39600fddd3",
   "data": "f1f20ca8007e910a3bf8b2e61da0f26bca07ef78717a6ea54165f5",
-  "gas_limit": 60000}' http://localhost:26658/submit_pfd
+  "gas_limit": 60000}' http://localhost:26658/submit_pfd | jq
 ```
 - Aşağıdakine benzer bir çıktı almalısınız.
 ```
@@ -337,7 +337,7 @@ curl -X POST -d '{"namespace_id": "0c204d39600fddd3",
 - PayForData işleminizi gönderdikten sonra başarılı olduğunda node, işlemin dahil edildiği blok yüksekliğini cevap olarak gönderir. Sonra size geri dönmesini sağlamak için bu blok yüksekliğini ve PayForData işleminizi gönderdiğiniz namespace_id'yi kullanabilirsiniz. Bu örnekte elde ettiğimiz blok yüksekliği 214000 olduğunu düşünelim ve aşağıdaki kodda ilgili yere yazalım.
 ```
 curl -X GET \
-  http://localhost:26658/namespaced_shares/0c204d39600fddd3/height/214000
+  http://localhost:26658/namespaced_shares/0c204d39600fddd3/height/214000 | jq
 ```
 
 - Bu kodun çıktısı aşağıdakine benzer olmalı.
