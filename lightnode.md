@@ -2,9 +2,9 @@
 - İşlemlerin doğruluğunu sağlamak için blokların header bilgilerini barındıran düğümlere verilen isimdir. Bu şekilde bütün ağı depolamadıkları için çok daha düşük depolama alanı ihtiyacı duyarlar. 
 
 ## Sistem Gereksinimleri
-Memory: 2 GB RAM
-CPU: Single Core
-Disk: 25 GB SSD
+- Memory: 2 GB RAM
+- CPU: Single Core
+- Disk: 25 GB SSD
 
 ## Tmux Kullanımı
 - Yeni tmux tekranı açmak: ```tmux```
