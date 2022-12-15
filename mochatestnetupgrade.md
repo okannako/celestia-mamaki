@@ -108,13 +108,13 @@ curl -s localhost:26657/status | jq .result | jq .sync_info
 ## Create Validator
 ```
 MONIKER="Validator Name"
-VALIDATOR_WALLET="Wallet Name
+VALIDATOR_WALLET="Wallet Name"
 EVM_ADDRESS=You can add any Ethereum-based address
 ORCHESTRATOR_ADDRESS=Validators certainly can use their existing Celestia addresses here but it is recommended to create a new one.
 
 
 celestia-appd tx staking create-validator \
-    --amount=19819060000000utia \
+    --amount=1000000utia \
     --pubkey=$(celestia-appd tendermint show-validator) \
     --moniker=$MONIKER \
     --chain-id=mocha \
