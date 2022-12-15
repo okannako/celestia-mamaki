@@ -30,17 +30,14 @@ cd $HOME
 rm -rf networks
 git clone https://github.com/celestiaorg/networks.git
 ```
-- ``celestia-appd version`` when you type aa, it should output ``0.11.0.``
+- ``celestia-appd version`` when you type aa, it should output ``0.11.0``
 
 ## Mocha Settings
 ```
 celestia-appd init "node-name" --chain-id mocha
 cp $HOME/networks/mocha/genesis.json $HOME/.celestia-app/config
-SEEDS="8084e73b70dbe7fba3602be586de45a516012e6f@144.76.112.238:26656"
 PEERS="eaa763cde89fcf5a8fe44274a5ee3ce24bce2c5b@64.227.18.169:26656, 0d0f0e4a149b50a96207523a5408611dae2796b6@198.199.82.109:26656, c2870ce12cfb08c4ff66c9ad7c49533d2bd8d412@178.170.47.171:26656"
-SEED_MODE="true"
-sed -i -e 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.celestia-app/config/config.toml
-sed -i -e "s/^seed_mode *=.*/seed_mode = \"$SEED_MODE\"/" $HOME/.celestia-app/config/config.toml
+sed -i.bak -e "s/^persistent-peers *=.*/persistent-peers = \"$PEERS\"/" $HOME/.celestia-app/config/config.toml
 ```
 
 ## Configure Pruning
