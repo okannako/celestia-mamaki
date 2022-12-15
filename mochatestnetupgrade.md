@@ -130,6 +130,5 @@ celestia-appd tx staking create-validator \
     --orchestrator-address=$ORCHESTRATOR_ADDRESS \
     --evm-address=$EVM_ADDRESS \
     --fees 500utia \
-    --gas=auto 300671 \
-    --node http://localhost:36657
+    --gas=auto 300671
 ```
