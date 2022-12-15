@@ -36,8 +36,9 @@ git clone https://github.com/celestiaorg/networks.git
 ```
 celestia-appd init "node-name" --chain-id mocha
 cp $HOME/networks/mocha/genesis.json $HOME/.celestia-app/config
-PEERS="eaa763cde89fcf5a8fe44274a5ee3ce24bce2c5b@64.227.18.169:26656, 0d0f0e4a149b50a96207523a5408611dae2796b6@198.199.82.109:26656, c2870ce12cfb08c4ff66c9ad7c49533d2bd8d412@178.170.47.171:26656"
-sed -i.bak -e "s/^persistent-peers *=.*/persistent-peers = \"$PEERS\"/" $HOME/.celestia-app/config/config.toml
+SEEDS="8084e73b70dbe7fba3602be586de45a516012e6f@144.76.112.238:26656"
+PEERS="eaa763cde89fcf5a8fe44274a5ee3ce24bce2c5b@64.227.18.169:26656, 0d0f0e4a149b50a96207523a5408611dae2796b6@198.199.82.109:26656, c2870ce12cfb08c4ff66c9ad7c49533d2bd8d412@178.170.47.171:26656, d5519e378247dfb61dfe90652d1fe3e2b3005a5b@65.109.68.190:20656, f9e950870eccdb40e2386896d7b6a7687a103c99@88.99.219.120:43656, c2870ce12cfb08c4ff66c9ad7c49533d2bd8d412@178.170.47.171:26656, 8bb8e34ac6eb4ddb927bb1cbbd44357683123af1@188.165.221.155:30542, 0d0f0e4a149b50a96207523a5408611dae2796b6@198.199.82.109:26656, eaa763cde89fcf5a8fe44274a5ee3ce24bce2c5b@64.227.18.169:26656, 3584c49855123abdc16b01a47f9e1bea38a9db1b@154.26.155.102:26656"
+sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.celestia-app/config/config.toml
 ```
 
 ## Configure Pruning
