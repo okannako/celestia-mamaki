@@ -128,3 +128,8 @@ celestia-appd tx staking create-validator \
     --fees 500utia \
     --gas=400671
 ```
+
+## Delegate to a Validator
+```
+celestia-appd tx staking delegate VALIDATOR_ADDRESS 1000000utia --chain-id mocha --fees=300utia --from walletname
+```
