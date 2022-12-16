@@ -70,7 +70,7 @@ wget -O - https://snaps.qubelabs.io/celestia/${SNAP_NAME} | tar xf - \
     -C ~/.celestia-app/data/
 ```
 
-### Wallet
+## Wallet
 ```
 celestia-appd keys add walletname
 ```
@@ -78,27 +78,27 @@ celestia-appd keys add walletname
 celestia-appd keys add walletname --recover
 ```
 
-### Node Start
+## Node Start
 
 ```
 sudo systemctl enable celestia-appd
 sudo systemctl start celestia-appd
 ```
 
-### Check If Daemon Has Been Started Correctly
+## Check If Daemon Has Been Started Correctly
 
 ```
 sudo systemctl status celestia-appd
 ```
 - You can exit the status screen by pressing `ctrl+c` 
 
-### Check Daemon Logs in Real Time
+## Check Daemon Logs in Real Time
 
 ```
 sudo journalctl -u celestia-appd.service -f
 ```
 
-### To check If Your Node is in Sync Before Going Forward
+## To check If Your Node is in Sync Before Going Forward
 
 ```
 curl -s localhost:26657/status | jq .result | jq .sync_info
