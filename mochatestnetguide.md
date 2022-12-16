@@ -155,8 +155,8 @@ celestia-appd tx staking create-validator \
     --from=$VALIDATOR_WALLET \
     --orchestrator-address=$ORCHESTRATOR_ADDRESS \
     --evm-address=$EVM_ADDRESS \
-    --fees 500utia \
-    --gas=400671
+    --fees=990utia \
+    --gas=900000
 ```
 
 ## Delegate to a Validator
