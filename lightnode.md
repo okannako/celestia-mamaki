@@ -94,6 +94,17 @@ EOF
 systemctl enable celestia-lightd && systemctl start celestia-lightd && journalctl -u celestia-lightd.service -f
 ```
 
+## Node Durdurma
+```
+systemctl disable celestia-lightd && systemctl stop celestia-lightd
+```
+## Dosyaları Silme
+```
+cd
+rm -rf celestia-app
+rm -rf .celestia-app
+```
+
 - Eğer ``No journal files were found`` hatası alıyorsanız aşağıdaki kodu girdikten sonra tekrar deneyin.
 ```
 sudo systemctl restart systemd-journald
