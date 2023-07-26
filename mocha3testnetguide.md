@@ -33,7 +33,7 @@ go version
 cd $HOME
 git clone https://github.com/celestiaorg/celestia-app.git
 cd celestia-app/
-APP_VERSION=v1.0.0-rc9
+APP_VERSION=v1.0.0-rc10
 git checkout tags/$APP_VERSION -b $APP_VERSION
 make install
 ```
@@ -42,7 +42,7 @@ cd $HOME
 rm -rf networks
 git clone https://github.com/celestiaorg/networks.git
 ```
-- ``celestia-appd version`` when you type aa, it should output ``v1.0.0-rc9``
+- ``celestia-appd version`` when you type aa, it should output ``v1.0.0-rc10``
 
 ## Mocha Settings
 ```
